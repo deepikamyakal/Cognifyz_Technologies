@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Simple Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to My Interactive Webpage</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <p>This is a simple webpage that demonstrates HTML, CSS, and JavaScript functionalities.</p>
+        <img src="calculator.png">
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Interactive Features</h2>
+
+        <!-- Button that Changes Color -->
+        <div class="feature">
+            <h3>Color-Changing Button</h3>
+            <button id="colorButton">Click Me!</button>
+        </div>
+
+        <!-- Greeting Alert -->
+        <div class="feature">
+            <h3>Greeting Alert</h3>
+            <button id="greetButton">Show Greeting</button>
+        </div>
+
+        <!-- Basic Calculator -->
+        <div class="feature">
+            <h3>Simple Calculator</h3>
+            <form id="calculator">
+                <label for="number1">Number 1:</label>
+                <input type="number" id="number1" name="number1" required>
+
+                <label for="number2">Number 2:</label>
+                <input type="number" id="number2" name="number2" required>
+
+                <button type="submit">Add</button>
+            </form>
+            <p id="calcResult"></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
