@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <img src="pic1.jpg" alt="Thumbnail 1" onclick="openModal('image1.jpg')">
+        <img src="pic2.jpg" alt="Thumbnail 2" onclick="openModal('image2.jpg')">
+        <img src="pic3.jpg" alt="Thumbnail 3" onclick="openModal('image3.jpg')">
+    </div>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

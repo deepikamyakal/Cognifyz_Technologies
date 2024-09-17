@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.slideshow {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
